@@ -1,0 +1,23 @@
+{
+  "name": "spot-the-bot",
+  "version": "1.0.0",
+  "description": "<p>Please use one style sheet! You can do that like this:</p>",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jackbenimble1/spot-the-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jackbenimble1/spot-the-bot/issues"
+  },
+  "homepage": "https://github.com/Jackbenimble1/spot-the-bot#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
+    "eslint": "^10.14.0"
+  }
+}

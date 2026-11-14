@@ -1,30 +1,61 @@
 body {
+	background-color: #3e4d73;
+}
+
+/* Header */
+header {
+	text-decoration: none;
+	font-family: Courier, monospace;
+	color: #c2cee7;
+	float: left;
+	padding-right: 10px;
+	padding-left: 20px;
+}
+/* Hi */
+#content {
+	background-color: #7ed1e5;
 	font-family: Verdana, Arial, sans-serif;
+	padding: 80px 20px 20px;
+	border-radius: 20px;
+}
+
+nav {
+	background-color: #556c98;
+	border-radius: 20px;
+	max-width: 800px;
+	float: right;
+}
+
+footer {
+	font-family: Verdana, Arial, sans-serif;
+	color: #c2cee7;
 }
 
 /* Navigation Bar */
 nav li {
     display: inline;
     text-decoration: none;
+	padding: 20px;
 }
 
 /* Navigation Bar Links (non-dropdown) */
 nav li a {
-  background-color: #04AA6D;
+  background-color: #7ed1e5;
+  text-decoration: none;
   font-family: Verdana, Arial, sans-serif;
-  color: white;
+  color: #3e4d73;
   padding: 16px;
   border-radius: 10px;
   font-size: 16px;
   border: none;
-  text-decoration: none;
 }
 
 /* Navigation Bar Dropdown Buttons, styled identically to non-dropdown navigation bar links */
 .dropbtn {
-  background-color: #04AA6D;
+  background-color: #7ed1e5;
+  text-decoration: none;
   font-family: Verdana, Arial, sans-serif;
-  color: white;
+  color: #3e4d73;
   padding: 16px;
   border-radius: 10px;
   font-size: 16px;
@@ -41,17 +72,17 @@ nav li a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #04AA6D;
+  background-color: #c2cee7;
   border-radius: 10px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+/* Links inside the Dropdown Content */
 .dropdown-content a {
   font-family: Verdana, Arial, sans-serif;
-  color: black;
+  color: #3e4d73;
   padding: 12px 16px;
   border-radius: 10px;
   text-decoration: none;
@@ -59,13 +90,22 @@ nav li a {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #3e8e41;}
+.dropdown-content a:hover {
+	background-color: #c2cee7;
+	color: #3e4d73;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {
+	background-color: #c2cee7;
+	color: #3e4d73;
+	}
 
 /* Change the background color of the other nav menu links on hover */
-nav a:hover {background-color: #3e8e41;}
+nav a:hover {
+	background-color: #c2cee7;
+	color: #3e4d73;
+}

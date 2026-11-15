@@ -1,5 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
 	background-color: #3e4d73;
+}
+
+#outer-wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Header */
@@ -13,29 +23,204 @@ header {
 }
 
 #content {
-	background-color: #7ed1e5;
+  position: relative;
+  top: 100px;
+  background-color: #7ed1e5;
 	font-family: Verdana, Arial, sans-serif;
   color: #3e4d73;
-	padding: 80px 20px 20px;
-	border-radius: 20px;
+	padding: 20px;
+	/* border-radius: 20px; */ /*rounded corners*/
+  corner-shape: bevel; /*angled corners*/
+  border-bottom-right-radius: 36px; /*angled corners*/
+  border-top-left-radius: 36px; /*angled corners*/
 }
 
+#content-p {
+  background-color: #c2cee7;
+  padding: 20px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #3e4d73;
+  /* border-radius: 30px; */ /*rounded corners*/
+  corner-shape: bevel; /*angled corners*/
+  border-bottom-right-radius: 24px; /*angled corners*/
+  border-top-left-radius: 24px; /*angled corners*/
+  max-width: 90%;
+  margin-inline: auto;
+}
+
+/* Contact Form */
+form {
+  padding-left: 40px;
+}
+input[type=text], input[type=email], textarea {
+  padding: 10px;
+  background-color:#abb7cf;
+  font-family: Verdana, Arial, sans-serif;
+  color:#3e4d73;
+  border-style: solid;
+  border-color:#3e4d73;
+  border-width: thin;
+  corner-shape: bevel; /*angled corners*/
+  border-bottom-right-radius: 6px; /*angled corners*/
+  border-top-left-radius: 6px; /*angled corners*/
+  outline: none;
+}
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  border-style: solid;
+  border-color:#3e4d73;
+  border-width: medium;
+}
+input[type=submit] {
+  background-color:#3e4d73;
+  border-style: solid;
+  border-width: thin;
+  border-color:#556c98;
+  color:#abb7cf;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 8px 5px 8px;
+  corner-shape: bevel; /*angled corners*/
+  border-bottom-right-radius: 8px; /*angled corners*/
+  border-top-left-radius: 8px; /*angled corners*/
+  cursor: pointer;
+}
+.custom-select {
+  position: relative; /* The container must be positioned relative: */
+  font-family: Verdana, Arial, sans-serif;
+  border-style: solid;
+  border-color:#3e4d73;
+  border-width: thin;
+  corner-shape: bevel; /*angled corners*/
+  border-bottom-right-radius: 6px; /*angled corners*/
+  border-top-left-radius: 6px; /*angled corners*/
+}
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+.select-selected {
+  background-color: #abb7cf;
+  border-style: solid;
+  border-color:#3e4d73;
+  border-width: thin;
+  corner-shape: bevel; /*angled corners*/
+  border-bottom-right-radius: 6px; /*angled corners*/
+  border-top-left-radius: 6px; /*angled corners*/
+}
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #3e4d73 transparent transparent transparent;
+}
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #3e4d73 transparent;
+  top: 7px;
+}
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #3e4d73;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent;
+  corner-shape: bevel; /*angled corners*/
+  border-bottom-right-radius: 6px; /*angled corners*/
+  border-top-left-radius: 6px; /*angled corners*/
+  cursor: pointer;
+}
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color:#abb7cf;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+.select-items div:hover {
+  background-color: #3e4d73;
+  color: #abb7cf;
+}
+
+/* The Spot the Bot Game itself */
+#game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c2cee7;
+  padding: 40px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #3e4d73;
+  /* border-radius: 30px; */ /*rounded corners*/
+  corner-shape: bevel; /*angled corners*/
+  border-bottom-right-radius: 24px; /*angled corners*/
+  border-top-left-radius: 24px; /*angled corners*/
+  max-width: 80%;
+  margin-inline: auto;
+}
+
+h2 {
+  display: flex;
+  align-items: top;
+  margin-inline: auto;
+}
+
+/* Team Bios */
+#bio {
+  background-color: #c2cee7;
+  padding: 20px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #3e4d73;
+  /*border-radius: 30px; */ /*rounded corners*/
+  corner-shape: bevel; /*angled corners*/
+  border-bottom-right-radius: 24px; /*angled corners*/
+  border-top-left-radius: 24px; /*angled corners*/
+  max-width: 90%;
+  margin-inline: auto;
+}
+
+#bio img {
+	float:left;
+	padding-right: 15px;
+  max-height: 100px;
+  corner-shape: bevel; /*angled corners*/
+  border-top-left-radius: 18px; /*angled corner*/
+}
 nav {
 	background-color: #556c98;
-	border-radius: 20px;
-	max-width: 800px;
+	/* border-radius: 20px; */ /*rounded corners*/
+  corner-shape: bevel; /*angled corners*/
+  border-bottom-right-radius: 18px; /*angled corners*/
+  border-top-left-radius: 18px; /*angled corners*/
+	max-width: 760px;
 	float: right;
 }
 
 footer {
+  position: relative;
+  top: 120px;
 	font-family: Verdana, Arial, sans-serif;
 	color: #c2cee7;
+  text-align: center;
 }
 
 /* Navigation Bar */
 nav li {
-    display: inline;
-    text-decoration: none;
+  display: inline;
+  text-decoration: none;
 	padding: 20px;
 }
 
@@ -46,7 +231,10 @@ nav li a {
   font-family: Verdana, Arial, sans-serif;
   color: #3e4d73;
   padding: 16px;
-  border-radius: 10px;
+  /* border-radius: 10px; */ /*rounded corners*/
+  corner-shape: bevel; /*angled corners*/
+  border-bottom-right-radius: 12px; /*angled corners*/
+  border-top-left-radius: 12px; /*angled corners*/
   font-size: 16px;
   border: none;
 }
@@ -58,7 +246,10 @@ nav li a {
   font-family: Verdana, Arial, sans-serif;
   color: #3e4d73;
   padding: 16px;
-  border-radius: 10px;
+  /* border-radius: 10px; */ /*rounded corners*/
+  corner-shape: bevel; /*angled corners*/
+  border-bottom-right-radius: 12px; /*angled corners*/
+  border-top-left-radius: 12px; /*angled corners*/
   font-size: 16px;
   border: none;
 }
@@ -74,7 +265,10 @@ nav li a {
   display: none;
   position: absolute;
   background-color: #c2cee7;
-  border-radius: 10px;
+  /* border-radius: 10px; */ /*rounded corners*/
+  corner-shape: bevel; /*angled corners*/
+  border-bottom-right-radius: 12px; /*angled corners*/
+  border-top-left-radius: 12px; /*angled corners*/
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -85,14 +279,17 @@ nav li a {
   font-family: Verdana, Arial, sans-serif;
   color: #3e4d73;
   padding: 12px 16px;
-  border-radius: 10px;
+  /* border-radius: 10px; */ /*remove comment for rounded corners*/
+  corner-shape: bevel; /*angled corners*/
+  border-bottom-right-radius: 12px; /*angled corners*/
+  border-top-left-radius: 12px; /*angled corners*/
   text-decoration: none;
   display: block;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-	background-color: #c2cee7;
+	background-color: #abb7cf;
 	color: #3e4d73;
 }
 

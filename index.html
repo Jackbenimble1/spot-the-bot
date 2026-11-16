@@ -2,43 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Spot the Bot</title>
-    <link rel="stylesheet" href=style.css>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot the Bot | Play the AI Challenge</title>
+    <meta name="description" content="Spot the Bot is a fun interactive game that challenges you to tell the difference between human-written and AI-generated content.">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<div id="outer-wrapper">
-		<header id="top">
-			<h1>Spot the Bot!</h1>
-		</header>
-		<nav>
-			<ul>
-				<li><a href="index.html">Play</a></li>
-                <div class="dropdown">
-				<li><button class="dropbtn">Resources &#9660;</button></li>
-				<div class="dropdown-content">
-					<a href="#">Link 1</a>
-					<a href="#">Link 2</a>
-					<a href="#">Link 3</a>
-				</div><!--end dropdown-content-->
-				</div><!--end dropdown-->
-				<div class="dropdown">
-				<li><button class="dropbtn">About &#9660;</button></li>
-				<div class="dropdown-content">
-					<a href="#">About the Project</a>
-					<a href="#">Meet the Team</a>
-				</div><!--end dropdown-content-->
-				</div><!--end dropdown-->
-				<li><a href="contact.html">Contact</a></li>
-            </ul>
-		</nav>
-		<div id="content">
-			<h3>This is a heading</h3>
-				<p>This is paragraphical content</p>
-		</div> <!--end content-->
-		<footer>
-			<p>This is footer text</p>  
-		</footer>
-	</div> <!--end outer-wrapper-->
+<body class="home-page">
+    <div class="page-shell">
+        <header class="site-header">
+            <div class="brand" aria-label="Spot the Bot home">Spot the Bot</div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html" class="nav-link active">Play</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" aria-labelledby="homepage-title">
+                <div class="hero-copy">
+                    <p class="eyebrow">Can you tell what is real?</p>
+                    <h1 id="homepage-title">Spot the Bot.</h1>
+                    <p class="intro-text">
+                        Test your instincts in a fast, fun challenge where you decide whether a response was written by a person or by AI.
+                    </p>
+                    <div class="cta-group">
+                        <a href="#game-preview" class="button primary">Play now</a>
+                        <a href="resources.html" class="button secondary">Learn more</a>
+                    </div>
+                    <ul class="feature-list" aria-label="Game features">
+                        <li>Quick rounds</li>
+                        <li>Instant feedback</li>
+                        <li>Build your score</li>
+                    </ul>
+                </div>
+
+                <div class="hero-panel" aria-label="Game preview">
+                    <div class="panel-header">
+                        <span class="status-dot"></span>
+                        <span>Round 01</span>
+                    </div>
+                    <h2>Which response looks human?</h2>
+                    <div class="answer-box">
+                        <button type="button" class="answer-option">Option A</button>
+                        <button type="button" class="answer-option">Option B</button>
+                    </div>
+                    <div class="score-row">
+                        <span>Score</span>
+                        <strong>0</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section id="game-preview" class="info-grid" aria-label="How the game works">
+                <article class="info-card">
+                    <h3>1. Read the prompt</h3>
+                    <p>Start with a scenario or question designed to test your judgment.</p>
+                </article>
+
+                <article class="info-card">
+                    <h3>2. Choose the answer</h3>
+                    <p>Decide which option feels most natural, useful, and authentically human.</p>
+                </article>
+
+                <article class="info-card">
+                    <h3>3. Track your score</h3>
+                    <p>Earn points for correct guesses and keep improving with each round.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Spot the Bot</p>
+        </footer>
+    </div>
 </body>
-  
 </html>
+

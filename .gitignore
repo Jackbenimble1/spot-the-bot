@@ -7,3 +7,5 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 .github/workflows/playwright.yml
+/js/rubric/test.js
+/js/rubric/exercises.js

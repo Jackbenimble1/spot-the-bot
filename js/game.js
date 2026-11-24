@@ -17,6 +17,7 @@ const samples = [
 
 console.log(samples[1]);
 console.log(samples[1].sampleText);
-const averageDifficulty = samples[1].difficulty0to5 + samples[2].difficulty0to5 / 2;
+const averageDifficulty = (samples[0].difficulty0to5 + samples[1].difficulty0to5) / 2;
 console.log(averageDifficulty);
 console.log(samples.length);
+

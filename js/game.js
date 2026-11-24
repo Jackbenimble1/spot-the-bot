@@ -21,3 +21,5 @@ const averageDifficulty = (samples[0].difficulty0to5 + samples[1].difficulty0to5
 console.log(averageDifficulty);
 console.log(samples.length);
 
+
+

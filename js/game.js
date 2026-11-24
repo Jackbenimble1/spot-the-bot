@@ -14,10 +14,9 @@ const samples = [
     sampleText: "Stuntman Monte Perlin has broken \"almost everything\" in his 25-year career. His films include \"Spider-Man,\" \"Star Trek, \"Terminator 3: Rise of the Machines\" One motorbike stunt involved jumping 70 feet at 60 mph into open car of moving train. Remotely controlled, burning ambulance flipped and barely missed him."
     }
 ];
-
-const playerAnswer ="human";
-const isCorrect = playerAnswer === samples[0].knownOrigin;
-let score;
+function evaluateAnswer(sample, playerAnswer) {
+    const isCorrect = sample.knownOrigin === playerAnswer;
+    let score;
 
 if (isCorrect) {
     console.log("Correct!");
@@ -27,5 +26,28 @@ if (isCorrect) {
     console.log("Incorrect!");
     score = 0;
 }
+    return score;
+}
 
-console.log(score)
+const roundScore = evaluateAnswer(samples[1], "ai")
+console.log(roundScore)
+
+
+
+/*function evaluateAnswer(sample, playerAnswer) {
+const playerAnswer ="human";
+const isCorrect = playerAnswer === samples[0].knownOrigin;
+let score;
+    console.log(sample);
+    console.log(playerAnswer);
+} evaluateAnswer(samples[1], "ai");
+if (isCorrect) {
+    console.log("Correct!");
+    score = 1;
+
+} else {
+    console.log("Incorrect!");
+    score = 0;
+}
+
+evaluateAnswer(samples[1], "human");*/

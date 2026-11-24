@@ -15,11 +15,17 @@ const samples = [
     }
 ];
 
-console.log(samples[1]);
-console.log(samples[1].sampleText);
-const averageDifficulty = (samples[0].difficulty0to5 + samples[1].difficulty0to5) / 2;
-console.log(averageDifficulty);
-console.log(samples.length);
+const playerAnswer ="human";
+const isCorrect = playerAnswer === samples[0].knownOrigin;
+let score;
 
+if (isCorrect) {
+    console.log("Correct!");
+    score = 1;
 
+} else {
+    console.log("Incorrect!");
+    score = 0;
+}
 
+console.log(score)
